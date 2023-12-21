@@ -1,0 +1,49 @@
+{
+    "name": "Trygve Bernhardt Moen Haaland",
+    "birth": "09-04-1993",
+    "nationality": "Norwegian",
+    "experience": {
+        "work": [{
+            "title": "UX Designer",
+            "company": "Twoday Commerce",
+            "startDate": "10-2022",
+            "endDate": "09-2023",
+            "note": null
+        },{
+            "title": "UX Designer",
+            "company": "Visma Digital Commerce",
+            "startDate": "02-2019",
+            "endDate": "09-2022",
+            "note": null
+        },{
+            "title": "UX Designer",
+            "company": "Trollweb Solutions",
+            "startDate": "08-2018",
+            "endDate": "01-2019",
+            "note": null
+        },{
+            "title": "Informasjonssekretær",
+            "company": "Hyperion – N4F",
+            "startDate": "08-2018",
+            "endDate": "01-2019",
+            "note": null
+        }],
+        "other": [
+            {},{},{}
+        ]
+    }
+,
+    "languages": [{
+        "language": "Norsk",
+        "level": "Morsmål"
+    },{
+        "language": "Engelsk",
+        "level": "På nivå med morsmål"
+    }]
+
+
+
+
+
+
+}
