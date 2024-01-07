@@ -288,6 +288,7 @@ body[data-theme="light"] .light-on {
 
     h1 {
         font-size: 4rem;
+        letter-spacing: unset;
     }
 
     h2 {
