@@ -31,7 +31,7 @@
     --font-main:  "skolar-pe-variable", serif;
     --font-flair: "degular-display", serif;
     --font-title: "degular-variable", sans-serif;
-
+    --font-bold: 700;
     --breakpoint: 768px;
 }
 
@@ -51,14 +51,15 @@ body[data-theme="light"] {
 
 body[data-theme="dark"] {
     --primary: var(--dark);
-    --on-primary: var(--on-dark)
+    --on-primary: var(--on-dark);
+    --font-bold: 666;
 }
 
 body {
     background: var(--primary);
     color: var(--on-primary);
     font-size: 1rem;
-    max-width: 1024px;
+    max-width: 52rem;
 }
 
 html {
@@ -90,8 +91,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     font-family: var(--font-title);
     font-variation-settings: "wght" 650;
-    font-style: normal;
-
+    font-variant: unicase;
 }
 
 
@@ -101,9 +101,7 @@ h1 {
     font-size: 8rem;
     line-height: 0.75;
 
-    font-variation-settings: "wght" 700, "opsz" 65;
-    font-style: normal;
-    font-weight: 900;
+    font-variation-settings: "wght" var(--font-bold), "opsz" 65;
     margin: unset;
     
 }
@@ -113,8 +111,6 @@ h2 {
     line-height: 1.15;
 
     font-variation-settings: "wght" 700, "opsz" 60;
-
-    font-weight: 900;
     margin: unset;
 }
 
@@ -123,9 +119,7 @@ h3 {
     line-height: 1.15;
 
     font-variation-settings: "wght" 700, "opsz" 40;
-/*     letter-spacing: 0.075rem;
- */
-    font-weight: 900;
+
     margin: unset;
 }
 
@@ -161,6 +155,7 @@ p {
 a {
     font-variation-settings: "wght" 500;
     text-decoration-color: var(--attention);
+    color: unset;
 }
 
 b, strong, .overline {
@@ -246,7 +241,7 @@ button,
 #elevator-button {
     position: fixed;
     bottom: 24px;
-    left: 24px;
+    right: 24px;
 }
 
 
