@@ -31,8 +31,10 @@
     --font-main:  "skolar-pe-variable", serif;
     --font-flair: "degular-display", serif;
     --font-title: "degular-variable", sans-serif;
-    --font-bold: 700;
+    --font-normal: 360;
+    --font-bold: 666;
     --breakpoint: 768px;
+    --font-base: 18px;
 }
 
 body {
@@ -52,7 +54,7 @@ body[data-theme="light"] {
 body[data-theme="dark"] {
     --primary: var(--dark);
     --on-primary: var(--on-dark);
-    --font-bold: 666;
+    --font-bold: 633;
 }
 
 body {
@@ -63,10 +65,10 @@ body {
 }
 
 html {
-/*     font-family: 'Cutive Mono', monospace; */
     margin: 0;
     width: 100dvw;
-    font-size: 16px;
+    font-size: var(--font-base);
+    text-rendering: geometricPrecision;
 }
 
 img {
@@ -93,8 +95,6 @@ h1, h2, h3, h4, h5, h6 {
     font-variation-settings: "wght" 650;
     font-variant: unicase;
 }
-
-
 
 h1 {
     letter-spacing: 0.2rem;
@@ -148,8 +148,8 @@ h6 {
 
 p {
     line-height: 1.6rem;
-    font-variation-settings: "wght" 350;
-    
+    font-variation-settings: "wght" var(--font-normal);
+    letter-spacing: 0.01rem;
 }
 
 a {
@@ -159,8 +159,7 @@ a {
 }
 
 b, strong, .overline {
-    /* font-weight: 700; */
-    font-variation-settings: "wght" 650;
+    font-variation-settings: "wght" var(--font-bold);
     letter-spacing: 0.025rem;
 }
 
@@ -310,7 +309,7 @@ body[data-theme="light"] .light-on {
 
 
     html {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     h1 {
