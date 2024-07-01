@@ -1,4 +1,4 @@
-const antallBilder = 3; // Anta at vi har 10 bilder av Jarle
+const antallBilder = 18; // Anta at vi har 10 bilder av Jarle
 const bildeMappe = 'img/jarle/'; // Mappen hvor bildene er lagret
 const bildePrefix = 'jarle_'; // Prefix for bildefilene
 const bildeType = '.jpg'; // Filtype for bildene
