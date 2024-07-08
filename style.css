@@ -346,17 +346,3 @@ body[data-theme="light"] .light-on {
 
 
 }
-
-/* JARLE */
-
-#bilde-container {
-    margin-bottom: 16px;
-}
-
-
-#jarle-bilde {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    max-height: 80dvh;
-}
