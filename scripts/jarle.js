@@ -1,4 +1,4 @@
-const antallBilder = 18; // Anta at vi har X bilder av Jarle
+const antallBilder = 18; // Antall bilder av Jarle i bildeMappe
 const bildeMappe = 'img/jarle/'; // Mappen hvor bildene er lagret
 const bildePrefix = 'jarle_'; // Prefix for bildefilene
 const bildeType = '.jpg'; // Filtype for bildene
@@ -13,10 +13,18 @@ function genererBildeListe() {
 
 const jarleBilder = genererBildeListe();
 
+let forrigeBilde = -1 // For avsjekk i visTilfeldigBilde
+
 function visTilfeldigBilde() {
-    const tilfeldigIndeks = Math.floor(Math.random() * jarleBilder.length);
-    const bildeSti = jarleBilder[tilfeldigIndeks];
+    let nyttBilde;
+    do {
+        nyttBilde = Math.floor(Math.random() * jarleBilder.length);
+    }
+    while ( nyttBilde === forrigeBilde&& jarleBilder.length > 1 );
+
+    const bildeSti = jarleBilder[nyttBilde];
     document.getElementById('jarle-bilde').src = bildeSti;
+    forrigeBilde = nyttBilde;
 }
 
 // Vis et tilfeldig bilde når siden lastes
