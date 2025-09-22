@@ -34,6 +34,7 @@
     --font-bold: 666;
     --breakpoint: 768px;
     --font-base: 18px;
+
 }
 
 body {
@@ -46,12 +47,18 @@ body[data-theme="light"] {
     --on-primary: var(--on-light);
     font-family: var(--font-main);
     font-size: 1rem;
+    --secondary: var(--dark-accent);
+    --secondary-text: var(--dark-accent);
+    --secondary-text-hover: var(--on-dark);
 }
 
 body[data-theme="dark"] {
     --primary: var(--dark);
     --on-primary: var(--on-dark);
     --font-bold: 633;
+    --secondary: var(--soft-attention);
+    --secondary-text: var(--soft-attention);
+    --secondary-text-hover: var(--on-light);
 }
 
 body {
@@ -85,7 +92,7 @@ body {
 
 /* Typografi */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .footer-title {
     width: 100%;
     font-family: var(--font-title);
     font-variation-settings: "wght" 650;
@@ -103,7 +110,7 @@ h1 {
     
 }
 
-h2 {
+h2, .footer-title {
     font-size: 6rem;
     line-height: 1.15;
 
@@ -155,12 +162,15 @@ a {
     color: unset;
 }
 
-b, strong, .overline {
+b,
+strong,
+.overline,
+.footer-title {
     font-variation-settings: "wght" var(--font-bold);
     letter-spacing: 0.025rem;
 }
 
-.subtitle, .overline {
+.subtitle, .overline, .footer-title {
     margin: unset;
     font-family: var(--font-title);
     font-size: 1.1rem;
@@ -174,7 +184,7 @@ b, strong, .overline {
     
 }
 
-h2.overline, .overline {
+h2.overline, .overline, .footer-title {
     margin-top: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.075rem;
@@ -223,7 +233,7 @@ button,
 .button-link {
     padding: var(--p-m) var(--p-l);
     border-radius: var(--rad-l);
-    border: none;
+    border: transparent 1px solid;
     font-family: var(--font-title);
     font-variation-settings: "wght" 700;
     display: inline-block;
@@ -255,12 +265,14 @@ button,
 }
 
 .secondary-button {
-    background-color: var(--light-accent);
-    color: #1a1a1a;
+    border-color: var(--secondary);
+    color: var(--secondary-text);
+    background-color: unset;
 }
 
 .secondary-button:hover {
-    background-color: var(--soft-attention);
+    background-color: var(--secondary-text);
+    color: var(--secondary-text-hover);
 }
 
 button:hover,
