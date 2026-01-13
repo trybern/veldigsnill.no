@@ -1,13 +1,10 @@
 const elevatorButton = document.getElementById("elevator-button");
 
 // Show the button when scrolling down
-window.onscroll = function() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        elevatorButton.classList.add("visible");
-    } else {
-        elevatorButton.classList.remove("visible");
-    }
-};
+window.addEventListener("scroll", () => {
+          const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+          elevatorButton.classList.toggle("visible", scrollPosition > 100);
+});
 
 // Scroll to top on click
 elevatorButton.addEventListener("click", function() {

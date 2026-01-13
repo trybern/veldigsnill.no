@@ -39,6 +39,7 @@
 
 body {
     cursor: url("img/cursor.png"), auto;
+    -webkit-font-smoothing: antialiased;
 }
 
 body[data-theme="default"],
@@ -71,7 +72,6 @@ html {
     margin: 0;
     width: 100dvw;
     font-size: var(--font-base);
-    text-rendering: geometricPrecision;
 }
 
 img {
