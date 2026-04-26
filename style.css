@@ -74,6 +74,12 @@ html {
     font-size: var(--font-base);
 }
 
+svg {
+    max-width: 100%;
+    height: auto;
+    stroke: var(--on-primary)
+}
+
 img {
     max-width: 100%;
     height: auto;
